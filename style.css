@@ -21,15 +21,15 @@ img {
 # Links
 --------------------------------------------------------------*/
 a {
-    color: royalblue;
+    color: white;
 }
 
 a:visited {
-    color: purple;
+    color: white;
 }
 
 a:hover, a:focus, a:active {
-    color: midnightblue;
+    color: white;
 }
 
 a:focus {
@@ -116,7 +116,11 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: 128px;
+    max-width: 128px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 /*
@@ -264,6 +268,7 @@ a:hover, a:active {
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {
     border-color: #2f2f2f;
+    font-size: 1.3em;
 }
 
 @media screen and (min-width: 992px) {
@@ -521,6 +526,7 @@ a:hover, a:active {
     font-size: 18px;
     line-height: 1.7;
     color: #777777;
+    text-align: justify;
 }
 
 .homepage-info-section .entry-footer a {
@@ -763,7 +769,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .next-events-section-header {
     margin-top: 36px;
-    text-align: center;
+    text-align: center !important;
 }
 
 .next-events-section-header .entry-title,
@@ -773,8 +779,7 @@ a:hover, a:active {
     font-weight: bold;
     line-height: 1;
     color: #232127;
-    background: url("images/next-events-header-bg.png") no-repeat center;
-    text-align: center;
+    text-align: center !important;
 }
 
 .next-events-section-header p {
@@ -959,9 +964,9 @@ a:hover, a:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(154,40,215, .85);
+    background: rgba(248,144,31, .85);
 
-    font-size: 30px;
+    font-size: 12px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
@@ -969,6 +974,7 @@ a:hover, a:active {
     visibility: hidden;
     opacity: 0;
     transition: all .35s;
+    padding:4px;
 }
 
 .event-overlay-link:hover {
@@ -976,7 +982,7 @@ a:hover, a:active {
     color: #fff;
 }
 
-.homepage-regional-events-slider .swiper-slide:hover .event-overlay-link {
+.homepage-next-events .next-event-wrap:hover .event-overlay-link {
     visibility: visible;
     opacity: 1;
 }
@@ -1117,9 +1123,9 @@ a:hover, a:active {
     background-image: url("images/events-news-bg.jpg");
 }
 
-.contact-page-header {
+/*.contact-page-header {
     background-image: url("images/contact-bg.jpg");
-}
+}*/
 
 .elements-page-header {
     background-image: url("images/elements-bg.jpg");
@@ -1887,12 +1893,28 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
+
+.contact-page {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+.contact-page .entry-title {
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+    text-align: center;
+}
+
 .contact-location-details {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .contact-location-details .entry-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: #232127;
 }
@@ -1906,13 +1928,14 @@ ul.tabs-nav .tab-nav.active {
 
 .contact-location-details .entry-footer ul {
     padding: 0;
-    margin: 42px 0 0;
+    margin: 20px 0 0;
     list-style: none;
+    text-align: center;
 }
 
 .contact-location-details .entry-footer li {
-    padding-left: 48px;
-    margin-bottom: 12px;
+    padding-left: 0px;
+    margin-bottom: 8px;
     font-size: 18px;
     color: #232127;
 }
@@ -2112,7 +2135,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-logo img {
-    max-width: 100%;
+    width: 300px;
 }
 
 .footer-navigation ul,
@@ -2138,7 +2161,8 @@ ul.tabs-nav .tab-nav.active {
     display: block;
     padding: 8px 12px;
     color: #fff;
-        /*text-decoration: none;*/
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
 .footer-social li a {
@@ -2152,6 +2176,11 @@ ul.tabs-nav .tab-nav.active {
 
 .footer-social li a:hover {
     color: #fff;
+}
+
+.credits a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .back-to-top {
