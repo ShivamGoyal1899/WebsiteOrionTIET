@@ -876,10 +876,11 @@ a:hover, a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    min-height: 1500px;
-    padding-top: 280px;
+    /*min-height: 1500px;*/
+    padding-top: 120px;
     background: url("images/regional-events-bg.jpg") no-repeat;
     background-size: cover;
+    align-content: center;
 }
 
 .homepage-regional-events .regional-events-heading .entry-title {
@@ -996,7 +997,7 @@ a:hover, a:active {
 }
 
 .events-partners-logos .event-partner-logo {
-    width: 20%;
+    width: 100%;
     min-width: 220px;
     margin-top: 80px;
     text-align: center;
