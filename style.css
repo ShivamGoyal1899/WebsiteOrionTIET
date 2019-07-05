@@ -499,16 +499,17 @@ a:hover, a:active {
 # Homepage - Info Section
 --------------------------------------------------------------*/
 .homepage-info-section {
-    padding: 120px 0;
+    padding: 80px 0;
     background: #fff;
 }
 
 .homepage-info-section figure {
-    padding-right: 30px;
+    padding: 0px 30px;
 }
 
 .homepage-info-section figure img {
     max-width: 100%;
+    max-height: 300px;
 }
 
 .homepage-info-section .entry-title {
@@ -516,6 +517,7 @@ a:hover, a:active {
     font-weight: bold;
     line-height: 1;
     color: #232127;
+    text-align: center;
 }
 
 .homepage-info-section .entry-content {
@@ -768,6 +770,7 @@ a:hover, a:active {
 # Homepage - Next Events
 --------------------------------------------------------------*/
 .next-events-section-header {
+    width: 100% !important;
     margin-top: 36px;
     text-align: center !important;
 }
