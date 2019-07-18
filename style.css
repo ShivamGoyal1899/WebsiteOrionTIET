@@ -1001,9 +1001,13 @@ a:hover, a:active {
 
 .events-partners-logos .event-partner-logo {
     width: 100%;
-    min-width: 220px;
+    max-width: 500px;
     margin-top: 80px;
     text-align: center;
+}
+
+.event-partner-logo {
+    width: 50%;
 }
 
 /*--------------------------------------------------------------
